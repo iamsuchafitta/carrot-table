@@ -1,57 +1,9 @@
-html {
-  font-family : 'Nunito', sans-serif;
-}
-
-body {
-  display        : flex;
-  flex-direction : column;
-  height         : 100vh;
-  padding        : 2rem;
-  background     : linear-gradient(to bottom, #B65200, #7A2900);
-}
-
-#root {
-  display        : flex;
-  align-items    : center;
-  flex-direction : column;
-  flex-grow      : 1;
-  padding        : 1rem;
-  border-radius  : 1rem;
-  background     : linear-gradient(to bottom, #FFB571, #FF7F39);
-}
-
-h1 {
-  font-size     : 2rem;
-  font-weight   : bold;
-  margin-bottom : 1rem;
-  color         : white;
-}
-
-/* Table */
-
-.table-container {
-  overflow-y    : auto;
-  width         : 100%;
-  max-height    : calc(100vh - 10rem);
-  border-radius : 1rem;
-}
-
-table {
-  overflow : hidden;
-  width           : 100%;
-  border-collapse : collapse;
-}
-
-thead {
-  position         : sticky;
-  z-index          : 1;
-  top              : 0;
-  background-color : #FF7F39;
+#table-container {
+  max-height : calc(100vh - 10rem);
 }
 
 th, td {
   position      : relative;
-  width         : 100px;
   max-width     : 100px;
   padding       : 8px;
   text-align    : center;
@@ -60,7 +12,7 @@ th, td {
 }
 
 td {
-  overflow      : hidden;
+  overflow : hidden;
 }
 
 tr:nth-child(even) {
@@ -76,4 +28,21 @@ th:not(:last-child)::after, td:not(:last-child)::after {
   transform      : translateY(-50%);
   pointer-events : none;
   border-right   : 1px dashed rgba(255, 255, 255, 0.5);
+}
+
+[data-btn-cols] {
+  padding          : 0.25rem 0.75rem;
+  cursor           : pointer;
+  transition       : background-color 0.3s;
+  border           : none;
+  border-radius    : 0.5rem;
+  background-color : #FF7F39;
+}
+
+[data-btn-cols]:hover {
+  background-color : #FFA058;
+}
+
+[data-btn-cols]:active {
+  background-color : #FF7F39;
 }

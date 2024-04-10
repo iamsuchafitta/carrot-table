@@ -1,0 +1,147 @@
+/* Placement */
+
+.sticky {
+  position : sticky;
+}
+
+.h-screen {
+  height : 100vh;
+}
+
+.w-full {
+  width : 100%;
+}
+
+.w-4 {
+  width : 4rem;
+}
+
+.top-0 {
+  top : 0;
+}
+
+/* Flex */
+
+.flex {
+  display : flex;
+}
+
+.flex-col {
+  flex-direction : column;
+}
+
+.grow-1 {
+  flex-grow : 1;
+}
+
+.items-center {
+  align-items : center;
+}
+
+.justify-center {
+  justify-content : center;
+}
+
+.gap-1 {
+  gap : 1rem;
+}
+
+.gap-05 {
+  gap : 0.5rem;
+}
+
+/* Padding */
+
+.p-2 {
+  padding : 2rem;
+}
+
+.p-1 {
+  padding : 1rem;
+}
+
+.p-05 {
+  padding : 0.5rem;
+}
+
+/* Margin */
+
+.mb-1 {
+  margin-bottom : 1rem;
+}
+
+/* Text */
+
+.text-nunito {
+  font-family : 'Nunito', sans-serif;
+}
+
+.text-2 {
+  font-size : 2rem;
+}
+
+.text-bold {
+  font-weight : bold;
+}
+
+.text-center {
+  text-align : center;
+}
+
+.color-white {
+  color : white;
+}
+
+/* Border */
+
+.border-none {
+  border : none;
+}
+
+.border-collapse {
+  border-collapse : collapse;
+}
+
+.radius-1 {
+  border-radius : 1rem;
+}
+
+.radius-05 {
+  border-radius : 0.5rem;
+}
+
+/* Background */
+
+.bg-orange {
+  background-color : #FF7F39;
+}
+
+.gradient-body {
+  background : linear-gradient(to bottom, #B65200, #7A2900);
+}
+
+.gradient-root {
+  background : linear-gradient(to bottom, #FFB571, #FF7F39);
+}
+
+/* Overflow */
+
+.overflow-y-auto {
+  overflow-y : auto;
+}
+
+.overflow-x-clip {
+  overflow-x : clip;
+}
+
+/* Z-Index */
+
+.z-1 {
+  z-index : 1;
+}
+
+/* Effects */
+
+.outline-none {
+  outline : none;
+}

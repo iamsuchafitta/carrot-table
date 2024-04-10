@@ -2,23 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Carrot Table</title>
-  <link rel="icon" type="image/svg+xml" href="/src/carrot.svg" />
+  <link rel="icon" type="image/svg+xml" href="carrot.svg" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utils.css">
 </head>
-<body>
-<div id="root">
-  <h1>Carrot Table</h1>
-  <div class="table-container">
-    <table id="table">
-      <thead></thead>
+<body class="flex-col flex-col h-screen p-2 text-nunito gradient-body">
+<div id="root" class="flex flex-col grow-1 items-center p-1 radius-1 gradient-root">
+  <div class="flex items-center justify-center mb-1 gap-05">
+    <h1 class="text-2 text-bold color-white">Carrot Table</h1>
+    <button data-btn-cols="5" class="color-white">5 columns</button>
+    <button data-btn-cols="25" class="color-white">25 columns</button>
+  </div>
+  <div id="table-container" class="overflow-y-auto w-full radius-1">
+    <table id="table" class="overflow-x-clip w-full border-collapse">
+      <thead class="sticky z-1 top-0 bg-orange"></thead>
       <tbody></tbody>
     </table>
   </div>
